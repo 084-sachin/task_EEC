@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Feedback Form Using HTML, CSS And PHP - reusable form</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="form.css" >
+        <script src="form.js"></script>
+    </head>
+    <body >
+        <div class="container">
+            <div class="imagebg"></div>
+            <div class="row " style="margin-top: 50px">
+                <div class="col-md-6 col-md-offset-3 form-container">
+                    <h2><center><b><u>Crime Report</u></b></center></h2>
+                    <p> Please provide the required information below: </p>
+                    <div role="form" method="post" id="reused_form">
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label></label>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="issue"> Issue:</label>
+                                <textarea class="form-control" type="textarea" name="issue" id="issue" placeholder="Your issue" maxlength="600" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="place"> Place:</label>
+                                <input type="text" class="form-control" id="place" name="place" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="date"> Date:</label>
+                                <input type="date" class="form-control" id="date" name="date" required>
+                            </div>
+                             <div class="col-sm-6 form-group">
+                                <label for="time"> Time:</label>
+                                <input type="time" class="form-control" id="time" name="time" required>
+                            </div>
+
+                        </div>
+                        <p><b><u>Give details of victim:</u></b></p>
+
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="victimname"> Name:</label>
+                                <input type="text" class="form-control" id="victimname" name="victimname" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="victimage"> Age:</label>
+                                <input type="age" class="form-control" id="victimage" name="victimage" required>
+                            </div>
+                              <div class="col-sm-12 form-group">
+                                <label for="address"> Address:</label>
+                                <textarea class="form-control" type="textarea" name="victimaddress" id="victimaddress" placeholder="address" maxlength="600" rows="4"></textarea>
+                            </div>
+
+                              <div class="col-sm-6 form-group">
+                                <label for="photo"> Photo:</label>
+                                 <input type="photo" class="form-control" id="photo" name="photo" required>
+                              </div>
+
+                              <div class="col-sm-12 form-group">
+                                <label for="otherdetails"> Other Details:</label>
+                                <textarea class="form-control" type="textarea" name="victimotherdetails" id="victimotherdetails" placeholder="otherdetails" maxlength="50" rows="2"></textarea>
+                            </div>
+                    </div>
+
+                        <p><b><u>Give details of knocker:</u></b></p>
+
+                         <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="knockername"> Name:</label>
+                                <input type="text" class="form-control" id="knockername" name="knockername" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="knockerage"> Age:</label>
+                                <input type="age" class="form-control" id="knockerage" name="knockerage" required>
+                            </div>
+                              <div class="col-sm-6 form-group">
+                                <label for="mobilenumber"> Mobile Number:</label>
+                                <input type="mobilenumber" class="form-control" id="mobilenumber" name="mobilenumber" required>
+                            </div>
+                              <div class="col-sm-12 form-group">
+                                <label for="address"> Address:</label>
+                                <textarea class="form-control" type="textarea" name="address" id="address" placeholder="address" maxlength="600" rows="4"></textarea>
+                            </div>
+                              <div class="col-sm-6 form-group">
+                                <label for="relation"> Any Relation With Relation :</label>
+                                 <input type="relation" class="form-control" id="relation" name="relation" required>
+                              </div>
+
+                              <div class="col-sm-12 form-group">
+                                <label for="otherdetails"> Other Details:</label>
+                                <textarea class="form-control" type="textarea" name="otherdetails" id="otherdetails" placeholder="otherdetails" maxlength="50" rows="2"></textarea>
+                            </div>
+                         </div>
+                              <p><b><u>Give details of suspect:</u></b></p>
+
+                         <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="suspectname"> Name:</label>
+                                <input type="text" class="form-control" id="suspectname" name="suspectname" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="suspectage"> Age:</label>
+                                <input type="age" class="form-control" id="suspectage" name="suspectage" required>
+                            </div>
+                              <div class="col-sm-6 form-group">
+                                <label for="mobilenumber"> Mobile Number:</label>
+                                <input type="mobilenumber" class="form-control" id="suspectmobilenumber" name="mobilenumber" required>
+                            </div>
+                              <div class="col-sm-12 form-group">
+                                <label for="address"> Address:</label>
+                                <textarea class="form-control" type="textarea" name="address" id="suspectaddress" placeholder="address" maxlength="600" rows="4"></textarea>
+                            </div>
+                             <div class="col-sm-12 form-group">
+                                <label for="otherdetails"> Other Details:</label>
+                                <textarea class="form-control" type="textarea" name="otherdetails" id="suspectotherdetails" placeholder="otherdetails" maxlength="50" rows="2"></textarea>
+                            </div>
+
+
+
+
+
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button type="submit" class="btn btn-lg btn-warning btn-block" >Post </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Posted your feedback successfully!</h3> </div>
+                    <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

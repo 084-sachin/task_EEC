@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Complaint Form Using HTML, CSS And PHP - reusable form</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="static/form.css" >
+        <script src="static/form.js"></script>
+    </head>
+    <body bgcolor='red'>
+        <div class="container">
+            <div class="imagebg"></div>
+            <div class="row " style="margin-top: 50px">
+                <div class="col-md-6 col-md-offset-3 form-container">
+
+                    <h2><b><u><center>Missing Report</center></u></b></h2>
+                    <p> Please provide the required information below: </p>
+                    <form role="form" method="post" id="reused_form">
+
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="name"> Issue:</label>
+                                <textarea class="form-control" type="textarea" name="issue" id="issue" placeholder="Your issue" maxlength="600" rows="4"></textarea>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="name"> Place:</label>
+                                <input type="text" class="form-control" id="place" name="place" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="name"> Date:</label>
+                                <input type="date" class="form-control" id="date" name="date" >
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="name"> Time:</label>
+                                <input type="time" class="form-control" id="time" name="time" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label><u><b>Give details of victim:</b></u></label>
+                            </div></div>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="name"> Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="age"> Age:</label>
+                                <input type="int" class="form-control" id="age" name="age" required>
+                            </div>
+
+                            <div class="col-sm-6 form-group">
+                                <label for="name">Any Relation with knocker:</label>
+                                <input type="text" class="form-control" id="relation" name="relation" >
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="mobile"> Mobile Number(if*):</label>
+                                <input type="int" class="form-control" id="mobile" name="mobile" >
+                            </div>
+
+                        </div>
+                         <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label>Gender:</label>
+                                <p>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="gender" id="male" value="bad" >
+                                        Male
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="gender" id="female" value="average" >
+                                        Female
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="gender" id="others" value="good" >
+                                        Others
+                                    </label>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-sm-12 form-group">
+                                <label for="address"> Address(if*):</label>
+                                <textarea class="form-control" type="textarea" name="address" id="address" placeholder="Address" maxlength="600" rows="4"></textarea>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="address"> Dist:</label>
+                                <input type="text" class="form-control" id="district" name="district" >
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="address"> State:</label>
+                                <input type="text" class="form-control" id="state" name="state" >
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="address"> Pin</label>
+                                <input type="int" class="form-control" id="pin" name="pin" >
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <label for="name"> Other Details:</label>
+                                <textarea class="form-control" type="textarea" name="othervictim" id="othervictim" maxlength="600" rows="2"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label><u><b>Give details of knocker:</b></u></label>
+                            </div></div>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="name"> Name:</label>
+                                <input type="text" class="form-control" id="nameknocker" name="nameknocker" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="age"> Age:</label>
+                                <input type="int" class="form-control" id="ageknocker" name="ageknocker" required>
+                            </div>
+
+                            <div class="col-sm-6 form-group">
+                                <label for="name">Any Relation with victim:</label>
+                                <input type="text" class="form-control" id="relationknocker" name="relationknocker" >
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="mobile"> Mobile Number:</label>
+                                <input type="int" class="form-control" id="mobileknocker" name="mobileknocker" required>
+                            </div>
+
+                        </div>
+                         <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label>Gender:</label>
+                                <p>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="gender1" id="maleknocker" value="bad" >
+                                        Male
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="gender1" id="femaleknocker" value="average" >
+                                        Female
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="gender1" id="othersknocker" value="good" >
+                                        Others
+                                    </label>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-sm-12 form-group">
+                                <label for="address"> Address:</label>
+                                <textarea class="form-control" type="textarea" name="addressknocker" id="addressknocker" placeholder="Address" maxlength="600" rows="4" required></textarea>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="address"> Dist:</label>
+                                <input type="text" class="form-control" id="districtknocker" name="districtknocker" required >
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="address"> State:</label>
+                                <input type="text" class="form-control" id="stateknocker" name="stateknocker" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="address"> Pin</label>
+                                <input type="int" class="form-control" id="pinknocker" name="pinknocker" required >
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <label for="name"> Other Details:</label>
+                                <textarea class="form-control" type="textarea" name="otherknocker" id="otherknocker" maxlength="600" rows="2"></textarea>
+                            </div>
+
+
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label><u><b>You can give details of suspect(if*):</b></u></label>
+                            </div></div>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="name"> Name:</label>
+                                <input type="text" class="form-control" id="namesuspect" name="namesuspect" >
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="age"> Age:</label>
+                                <input type="int" class="form-control" id="agesuspect" name="agesuspect" >
+                            </div>
+
+                            <div class="col-sm-6 form-group">
+                                <label for="name">Any Relation with victim:</label>
+                                <input type="text" class="form-control" id="relationsuspectvictim" name="relationsuspect" >
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="name">Any Relation with knocker:</label>
+                                <input type="text" class="form-control" id="relationsuspectknocker" name="relation" >
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="mobile"> Mobile Number:</label>
+                                <input type="int" class="form-control" id="mobilesuspect" name="mobilesuspect" >
+                            </div>
+
+                        </div>
+                         <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label>Gender:</label>
+                                <p>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="gender2" id="malesuspect" value="bad" >
+                                        Male
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="gender2" id="femalesuspect" value="average" >
+                                        Female
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="gender2" id="otherssuspect" value="good" >
+                                        Others
+                                    </label>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-sm-12 form-group">
+                                <label for="address"> Address:</label>
+                                <textarea class="form-control" type="textarea" name="addresssuspect" id="addresssuspect" placeholder="Address" maxlength="600" rows="4" ></textarea>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="address"> Dist:</label>
+                                <input type="text" class="form-control" id="districtsuspect" name="districtsuspect"  >
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="address"> State:</label>
+                                <input type="text" class="form-control" id="statesuspect" name="statesuspect" >
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="address"> Pin</label>
+                                <input type="int" class="form-control" id="pinsuspect" name="pinsuspect"  >
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <label for="name"> Other Details:</label>
+                                <textarea class="form-control" type="textarea" name="othersuspect" id="othersuspect" maxlength="600" rows="2"></textarea>
+                            </div>
+
+
+
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="name"> Additional description of the issue:</label>
+                                <textarea class="form-control" type="textarea" name="description" id="description" placeholder="Description" maxlength="6000" rows="3"></textarea>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button type="submit" class="btn btn-lg btn-warning btn-block" > Complain FIR </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Posted your feedback successfully!</h3> </div>
+                    <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
